@@ -30,6 +30,23 @@ matrix:
     dist: bionic
     compiler: clang
     arch: amd64
+  - name: "Bionic - clang"
+    os: linux
+    dist: bionic
+    compiler: clang
+    arch: arm64
+  - name: "Bionic - clang"
+    os: linux
+    dist: bionic
+    compiler: clang
+    arch: arm64-graviton2
+    virt: lxd
+    group: edge 
+  - name: "Bionic - gcc"
+    os: linux
+    dist: bionic
+    compiler: gcc
+    arch: amd64
   - name: "Bionic - gcc"
     os: linux
     dist: bionic
@@ -90,7 +107,7 @@ matrix:
     os: linux
     dist: focal
     compiler: gcc
-    arch: arm64
+    arch: arm64-fraviton2
     virt: lxd
     group: edge
     addons:
